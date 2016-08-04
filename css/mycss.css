@@ -41,6 +41,7 @@ header {
 
     animation-duration: 2s;
     animation-name: introslide;
+    z-index: -1;
 }
 .introgroup {
     animation-duration: 2s;
@@ -53,7 +54,6 @@ header {
     border-color: #ff9900;
     font-size: 35px;
     margin:5px;
-    margin-top: 40px;
     width: 375px;
     height: 50px;
     font-family: 'Bungee', cursive;
