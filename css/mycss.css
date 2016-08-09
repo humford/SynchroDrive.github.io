@@ -1,80 +1,18 @@
-@keyframes introslide {
-  from {
-    opacity:0;
-  }
-
-  to {
-    opacity:1;
-
-  }
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+  margin: 0;
+  padding: 0;
 }
+
 html {
+    background-color: #0099ff;
+}
 
-}
-body {
-    font-size: 0px;
-    margin:auto;
-}
 header {
-    background: url("http://i.imgur.com/0D3qG7D.gif");
-    background-size: cover;
-    text-align: center;
-    height:750px;
-}
-.introtext {
-    text-align: center;
-    font-size: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    color: #ff9900;
-    font-family: 'Bungee Inline', cursive;
-
-    animation-duration: 2s;
-    animation-name: introslide;
-    z-index: -1;
-}
-.introgroup {
-    animation-duration: 2s;
-    animation-name: introslide;
-}
-.introbutton {
-    background-color: transparent;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #ff9900;
-    font-size: 35px;
-    margin:5px;
-    width: 375px;
-    height: 50px;
-    font-family: 'Bungee', cursive;
-    color: #ff9900;
-
-    -webkit-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
-	-moz-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
-	-o-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
-	transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
-}
-.introbutton:hover {
-    color: rgb(0, 0, 0);
-    background-color: #ff9900;
-}
-.block {
-    height: 730px;
+    background-color: #0066ff;
+    height: 100px;
     width: 100%;
 }
-.coder {
-    background: #ff9900;
+#map {
+    height: 100%;
 }
-.entre {
-    background: rgb(255, 0, 255);
-}
+
