@@ -1,5 +1,6 @@
 function geo_success(position) {
-  do_something(position.coords.latitude, position.coords.longitude);
+  console.log("Lat:", position.coords.latitude)
+  console.log("Long:", position.coords.longitude)
 }
 
 function geo_error() {
