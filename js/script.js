@@ -13,6 +13,11 @@ function initMap() {
               lng: position.coords.longitude
             };
 
+            $.get( "https://api.twitter.com/1.1/search/tweets.json?q=%23trash&" + pos + ",1mi", function( data ) {
+              $( ".result" ).html( data );
+              alert( "Load was performed." );
+            });
+
             infoWindow.setPosition(pos);
             infoWindow.setContent('Location found.');
             map.setCenter(pos);
