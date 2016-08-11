@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- CSS Links Go Here -->
         <link href="https://fonts.googleapis.com/css?family=Dosis:400,600,800" rel="stylesheet">
+        <link href="css/hover-min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
 
@@ -20,12 +21,20 @@
 
         <div id="data">
             <div id="map-info">
-                <h1 id="mapmod">INTERACTIVE MAP</h1>
+                <!--<h1 id="mapmod">INTERACTIVE MAP</h1>-->
+
+                <ul>
+                    <button class="map-button" onclick="findUser()">FIND ME!</button>
+                    <button class="map-button">REFRESH</button>
+                </ul>
                 <div id="map"></div>
             </div>
 
             <div id="tweet-info">
-                
+                <div class="tweet-head">TWEET</div>
+                <div id="tweets">
+
+                </div>
             </div>
         </div>
 
