@@ -1,10 +1,10 @@
 function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 6,
-		  styles:[
-			    {
-			        "featureType": "administrative",
+	var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+	zoom: 6,
+	styles:[
+				{
+					"featureType": "administrative",
 			        "elementType": "labels.text.fill",
 			        "stylers": [
 			            {
@@ -81,9 +81,7 @@ function initMap() {
 			            }
 			        ]
 			    }
-			]
-    });
-	var infoWindow = new google.maps.InfoWindow({map: map});
+			]});
 }
 
 
@@ -97,9 +95,11 @@ function findUser() {
               lng: position.coords.longitude
             };
 
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            map.setCenter(pos);
+				var marker = new google.maps.Marker({
+    			position: pos,
+    			map: map,
+    			title: 'Hello World!'
+  			});
           });
 	}
 	else {
