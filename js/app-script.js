@@ -26,7 +26,7 @@ function checkLocation() {
               lng: position.coords.longitude
             };
 
-			map.panTo(locationCenter);
+			map.setCenter(locationCenter);
 
 			console.log(locationCenter);
 
