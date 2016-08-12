@@ -1,13 +1,12 @@
 var map;
 var mapCenter = {lat: -34.397, lng: 150.644};
 var tweets = [];
-var locationCenter;
 var myCircle;
 
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 	  center: mapCenter,
-	  zoom: 6
+	  zoom: 17
 	});
 
 	checkLocation();
@@ -21,7 +20,7 @@ function checkLocation() {
 	if (navigator.geolocation) {
 
 		navigator.geolocation.getCurrentPosition(function(position) {
-            locationCenter = {
+            mapCenter = {
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
@@ -31,13 +30,13 @@ function checkLocation() {
 			console.log(locationCenter);
 
 			myCircle = new google.maps.Circle({
-            	strokeColor: '#FF0000',
+            	strokeColor: '#00C0FF',
             	strokeOpacity: 0.8,
             	strokeWeight: 2,
-            	fillColor: '#FF0000',
+            	fillColor: '#1CD100',
             	fillOpacity: 0.35,
             	map: map,
-            	center: locationCenter,
+            	center: mapCenter,
             	radius: 500
           	});
 		}, function() {
