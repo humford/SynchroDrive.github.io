@@ -25,9 +25,9 @@ function checkLocation() {
               lng: position.coords.longitude
             };
 
-			map.setCenter(locationCenter);
+			map.setCenter(mapCenter);
 
-			console.log(locationCenter);
+			console.log(mapCenter);
 
 			myCircle = new google.maps.Circle({
             	strokeColor: '#00C0FF',
