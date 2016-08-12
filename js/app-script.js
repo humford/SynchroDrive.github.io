@@ -99,6 +99,8 @@ function findUser() {
     			position: pos,
     			map: map,
     			title: 'Hello World!'
+
+				map.panTo(marker.getPosition())
   			});
           });
 	}

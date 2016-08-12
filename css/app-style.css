@@ -155,3 +155,31 @@ header {
     font-weight: 400;
     background-color: #A3FF9F;
 }
+.tweet-button {
+    background-color: #A1F09E;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    border: 0px;
+    width: 70%;
+    margin: 3%;
+    margin-top: 6%;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: #00C0FF;
+    padding: 10px;
+    outline: 0;
+    box-shadow: 0px 5px #96DE93;
+    -webkit-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
+	-moz-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
+	-o-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
+	transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
+}
+.tweet-button:hover {
+    color: #1CD100;
+}
+.tweet-button:active {
+    box-shadow: 0px 0px #96DE93;
+    transform: translateY(5px);
+}
