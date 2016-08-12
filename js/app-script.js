@@ -3,11 +3,12 @@ var mapCenter = {lat: -34.397, lng: 150.644};
 var tweets = [];
 var myCircle;
 var circleOrigin;
+var circleRadius = 300;
 
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 	  center: mapCenter,
-	  zoom: 17
+	  zoom: 14
 	});
 
 	checkLocation();
@@ -49,7 +50,7 @@ function checkLocation() {
             	fillOpacity: 0.35,
             	map: map,
             	center: mapCenter,
-            	radius: 500
+            	radius: circleRadius
           	});
 		}, function() {
 			console.log("wtf bro");
