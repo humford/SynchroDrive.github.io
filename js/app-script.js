@@ -12,13 +12,15 @@ function initMap() {
 		});
 
 		navigator.geolocation.getCurrentPosition(function(position) {
-            mapCenter = {
+            locationCenter = {
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
 		});
 
-		map.setCenter(mapCenter);
+		map.setCenter(locationCenter);
+
+		console.log(locationCenter)
     } else {
         alert("You don't support this");
     }
