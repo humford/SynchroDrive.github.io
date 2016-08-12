@@ -8,7 +8,7 @@ var circleRadius = 300;
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 	  center: mapCenter,
-	  zoom: 14
+	  zoom: 16
 	});
 
 	checkLocation();
@@ -30,6 +30,9 @@ function checkLocation() {
 			map.setCenter(mapCenter);
 
 			console.log(mapCenter);
+
+			circleOrigin.setMap(null);
+			myCircle.setMap(null);
 
 			circleOrigin = new google.maps.Circle({
 				strokeColor: '#00C0FF',
