@@ -4,24 +4,30 @@ var tweets = [];
 var locationCenter;
 
 function initMap() {
-	if (navigator.geolocation) {
+	var map = new google.maps.Map(document.getElementById('map'), {
+	  center: mapCenter,
+	  zoom: 6
+	});
 
-		var map = new google.maps.Map(document.getElementById('map'), {
-		  center: mapCenter,
-		  zoom: 6
-		});
+	if (navigator.geolocation) {
 
 		navigator.geolocation.getCurrentPosition(function(position) {
             locationCenter = {
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
+
+			map.setCenter(locationCenter);
+
+			console.log(locationCenter);
+		}, function() {
+			console.log("wtf bro");
 		});
-
-		map.setCenter(locationCenter);
-
-		console.log(locationCenter)
     } else {
         alert("You don't support this");
     }
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+	console.log("Couldn't do this!");
 }
