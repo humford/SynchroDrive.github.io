@@ -12,12 +12,12 @@ function initMap() {
               lng: position.coords.longitude
             };
 		});
+
+		var map = new google.maps.Map(document.getElementById('map'), {
+		  center: mapCenter,
+		  zoom: 6
+		});
     } else {
         alert("You don't support this");
     }
-
-	var map = new google.maps.Map(document.getElementById('map'), {
-	  center: mapCenter,
-	  zoom: 6
-	});
 }
