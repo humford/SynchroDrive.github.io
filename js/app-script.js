@@ -13,6 +13,9 @@ function initMap() {
 	  zoom: 16
 	});
 
+	var opt = { minZoom: 13, maxZoom: 20 };
+	map.setOptions(opt);
+
 	checkLocation();
 };
 
