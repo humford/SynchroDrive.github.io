@@ -2,6 +2,7 @@ var map;
 var mapCenter = {lat: -34.397, lng: 150.644};
 var tweets = [];
 var myCircle;
+var circleOrigin;
 
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
@@ -28,6 +29,17 @@ function checkLocation() {
 			map.setCenter(mapCenter);
 
 			console.log(mapCenter);
+
+			circleOrigin = new google.maps.Circle({
+				strokeColor: '#00C0FF',
+				strokeOpacity: 1,
+				strokeWeight: 2,
+				fillColor: '#00C0FF',
+				fillOpacity: 1,
+				map: map,
+				center: mapCenter,
+				radius: 10
+			});
 
 			myCircle = new google.maps.Circle({
             	strokeColor: '#00C0FF',
