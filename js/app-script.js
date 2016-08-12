@@ -6,6 +6,11 @@ var locationCenter;
 function initMap() {
 	if (navigator.geolocation) {
 
+		var map = new google.maps.Map(document.getElementById('map'), {
+		  center: mapCenter,
+		  zoom: 6
+		});
+
 		navigator.geolocation.getCurrentPosition(function(position) {
             mapCenter = {
               lat: position.coords.latitude,
@@ -13,10 +18,7 @@ function initMap() {
             };
 		});
 
-		var map = new google.maps.Map(document.getElementById('map'), {
-		  center: mapCenter,
-		  zoom: 6
-		});
+		map.setCenter(mapCenter);
     } else {
         alert("You don't support this");
     }
