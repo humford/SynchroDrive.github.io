@@ -1,6 +1,27 @@
 function initMap() {
+	var pos;
+	if (navigator.geolocation) {
+  		console.log('Geolocation is supported!');
+
+		navigator.geolocation.getCurrentPosition(function(position) {
+            pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+				var marker = new google.maps.Marker({
+    			position: pos,
+    			map: map,
+    			title: 'Hello World!'
+  			});
+          });
+	}
+	else {
+  		console.log('Geolocation is not supported for this Browser/OS version yet.');
+	}
+
 	var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
+    center: pos,
 	zoom: 6,
 	styles:[
 				{
@@ -99,8 +120,6 @@ function findUser() {
     			position: pos,
     			map: map,
     			title: 'Hello World!'
-
-				map.panTo(marker.getPosition())
   			});
           });
 	}
