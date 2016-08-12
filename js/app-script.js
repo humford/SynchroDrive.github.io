@@ -38,7 +38,7 @@ function checkLocation() {
             	fillOpacity: 0.35,
             	map: map,
             	center: locationCenter,
-            	radius: 10
+            	radius: 500
           	});
 		}, function() {
 			console.log("wtf bro");
