@@ -22,7 +22,7 @@ function checkLocation(){
             fillOpacity: 0.35,
             map: map,
             center: mapCenter,
-            radius: Math.sqrt(citymap[city].population) * 100
+            radius: 100
           });
 	  },
 	  error: function(error) {
