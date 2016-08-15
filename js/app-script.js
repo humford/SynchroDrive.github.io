@@ -17,15 +17,37 @@ function checkLocation() {
 			}
 
 	    	map.setCenter(mapCenter);
+
+			createCircle();
 		},
 	  	error: function(error) {
-	    	alert('Geolocation failed: '+error.message);
+			mapCenter = {
+				lat: -12,
+				lng: -77
+			}
+
+	    	map.setCenter(mapCenter);
+
+			createCircle();
 		},
 	  	not_supported: function() {
-			alert("Your browser does not support geolocation");
-		},
-		always: function() {
-	    	alert("Done!");
+			mapCenter = {
+				lat: -12,
+				lng: -77
+			}
+
+	    	map.setCenter(mapCenter);
+
+			createCircle();
 		}
+	});
+};
+
+function createCircle() {
+	mapPolygon = map.drawCircle({
+		lat: mapCenter.lat,
+		lng: mapCenter.lng,
+		fillOpacity: 1,
+		radius: 500
 	});
 };
