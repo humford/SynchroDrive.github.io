@@ -91,3 +91,5 @@ function checkDatabase() {
 		overlayExist = 1;
 	});
 };
+
+checkLocation();
