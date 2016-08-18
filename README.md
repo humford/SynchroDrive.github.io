@@ -6,6 +6,7 @@ Wweet a picture of some trash with the hashtag #TweetSweep679 and it's location 
 
 ##Creators
 Ahnaf Taha ([@Synchrodrive](https://github.com/SynchroDrive/))
+
 Jared Foxhall
 
 Cred. All Star Code
