@@ -68,7 +68,7 @@ function checkDatabase() {
 
 		for (var property in dataSnap) {
 			if (dataSnap[property].coordinates != undefined) {
-				var twt = "http://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2F" + dataSnap[property].link.substring(20, dataSnap[property].link.indexOf("/status")) + "%2Fstatus" + "%2F" + dataSnap[property].link.substring(dataSnap[property].link.indexOf("/status") + 8);
+				var twt = "https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2F" + dataSnap[property].link.substring(20, dataSnap[property].link.indexOf("/status")) + "%2Fstatus" + "%2F" + dataSnap[property].link.substring(dataSnap[property].link.indexOf("/status") + 8);
 				var myMarker = map.addMarker({
 					lat: dataSnap[property].coordinates.coordinates[1],
 					lng: dataSnap[property].coordinates.coordinates[0],
