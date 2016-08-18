@@ -5,9 +5,9 @@ TweetSweep is a web tool to make cleaning up communities more social, more conne
 Wweet a picture of some trash with the hashtag #TweetSweep679 and it's location will show up on the app which you can open up to see what tweets have been made and where.
 
 ##Creators
-Ahnaf Taha (@SynchroDrive)
+Ahnaf Taha ([@Synchrodrive](https://github.com/SynchroDrive/))
 Jared Foxhall
 
 Cred. All Star Code
 
-Cred. Henry Williams (@humford) for Sinatra server/Heroku integration
+Cred. Henry Williams ([@humford](https://github.com/humford)) for Sinatra server/Heroku integration
