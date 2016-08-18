@@ -1,3 +1,13 @@
-#Bubble
-A bubble is a hub for posts, identified bu location, topic, event, 
-or the people in it.
+#TweetSweep
+TweetSweep is a web tool to make cleaning up communities more social, more connected, and more digital, allowing local groups, schools, and activists to identify where trash is and focus their efforts.
+
+##How it works
+Wweet a picture of some trash with the hashtag #TweetSweep679 and it's location will show up on the app which you can open up to see what tweets have been made and where.
+
+##Creators
+Ahnaf Taha (@SynchroDrive)
+Jared Foxhall
+
+Cred. All Star Code
+
+Cred. Henry Williams (@humford) for Sinatra server/Heroku integration

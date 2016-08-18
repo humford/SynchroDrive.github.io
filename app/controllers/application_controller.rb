@@ -7,7 +7,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    "Hello World!"
+    erb :index
+  end
+  
+  get "/app" do
+    erb :app
   end
 end
 
