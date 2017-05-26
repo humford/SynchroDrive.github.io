@@ -9,4 +9,5 @@ Tweet a picture of some trash with the hashtag #TweetSweep679 and it's location 
 * Jared Foxhall
 
 Cred. All Star Code
+
 Cred. Henry Williams ([@humford](https://github.com/humford)) for Sinatra server/Heroku integration
